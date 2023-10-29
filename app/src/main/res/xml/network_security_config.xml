@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    <domain-config>
+        <domain includeSubdomains="true">atharvagupta.pythonanywhere.com/recommend</domain>
+        <!-- Include additional domains or subdomains as needed -->
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/enterBudget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-300dp"
+        android:gravity="left"
+        android:text="Enter your Budget:"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Budget"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_bias="5"
+        app:layout_constraintBottom_toTopOf="@+id/enterMonth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterBudget" />
+
+    <TextView
+        android:id="@+id/enterMonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-40dp"
+        android:gravity="left"
+        android:text="Enter the month in which you wanna plan your trip:"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@id/editTextText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText"/>
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Month"
+        android:textColorHint="@color/Grey"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/enterDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterMonth"/>
+
+    <TextView
+        android:id="@+id/enterDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-40dp"
+        android:gravity="left"
+        android:text="Describe the location where you would like to visit:"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@id/editTextText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText2"/>
+
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Description"
+        android:textColorHint="@color/Grey"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterDescription"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:clickable="true"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
