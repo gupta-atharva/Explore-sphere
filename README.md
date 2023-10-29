@@ -18,4 +18,6 @@ Due to the unavailability of a suitable dataset, data scraping became essential.
 
 - Cosine Similarity: To recommend the top 3 places, ExploreSphere employs cosine similarity to find the best-suited destinations based on user input for travel time, budget, and description.
 
+- Link to our hosted flask app: https://atharvagupta.pythonanywhere.com/
+
 Happy exploring!
